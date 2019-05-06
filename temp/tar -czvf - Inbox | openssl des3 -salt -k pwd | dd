@@ -1,0 +1,2 @@
+tar -czvf - Inbox | openssl des3 -salt -k pwd | dd of=山人视频9n.des3
+dd if=山人视频9n.des3 | openssl des3 -d -k pwd | tar zxvf -
